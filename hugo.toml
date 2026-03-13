@@ -1,0 +1,4 @@
+baseURL = "https://sarfraz432.github.io/analysis-reports-blog/"
+languageCode = 'en-us'
+title = 'Malware analysis reports by Sarfraz'
+theme = "ananke"
