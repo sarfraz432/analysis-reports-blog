@@ -2,3 +2,11 @@ baseURL = "https://sarfraz432.github.io/analysis-reports-blog/"
 languageCode = 'en-us'
 title = 'Malware analysis reports by Sarfraz'
 theme = "ananke"
+
+[markup]
+  [markup.highlight]
+    style = "monokai"          # theme name
+    lineNos = false             # show line numbers
+    lineNumbersInTable = true  # cleaner copy-paste
+    noClasses = true          # use CSS classes (recommended)
+    tabWidth = 4
