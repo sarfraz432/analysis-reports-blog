@@ -8,7 +8,7 @@ title = 'Analyzing the New Variant of Redline Stealer'
 The Redline stealer has been a prevalent malware used to harvest sensitive information from infected systems. Known for its predictable decryption tactics, recent updates indicate a shift in its approach to config decryption. This post explores those changes in detail using a sample available from MalwareBazaar.
 
 ### Sample Details
-- **Source**: [MalwareBazaar link](https://bazaar.abuse.ch/sample/796b5d63c93d71012e8a8e8a7bd9e1290ca3963b7f6c78c3cdd0023cfebe9eab/)
+- **Source**: <a href="https://bazaar.abuse.ch/sample/796b5d63c93d71012e8a8e8a7bd9e1290ca3963b7f6c78c3cdd0023cfebe9eab/" target="_blank">MalwareBazaar link</a>
 - **Observation Date**: 2026-03-28
 - **Claimed Malware Type**: Redline stealer
 

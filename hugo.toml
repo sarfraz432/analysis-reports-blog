@@ -4,6 +4,8 @@ title = 'Malware analysis reports by Sarfraz'
 theme = "ananke"
 
 [markup]
+  [markup.goldmark.renderer]
+    unsafe = true
   [markup.highlight]
     style = "monokai"          # theme name
     lineNos = false             # show line numbers

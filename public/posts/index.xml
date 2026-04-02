@@ -6,21 +6,21 @@
     <description>Recent content in Posts on Malware analysis reports by Sarfraz</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 14 Mar 2026 02:27:53 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2026 21:57:44 +0530</lastBuildDate>
     <atom:link href="http://localhost:1313/analysis-reports-blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Analyzing the New Variant of Redline Stealer</title>
+      <link>http://localhost:1313/analysis-reports-blog/posts/new_redline/</link>
+      <pubDate>Sat, 28 Mar 2026 21:57:44 +0530</pubDate>
+      <guid>http://localhost:1313/analysis-reports-blog/posts/new_redline/</guid>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;The Redline stealer has been a prevalent malware used to harvest sensitive information from infected systems. Known for its predictable decryption tactics, recent updates indicate a shift in its approach to config decryption. This post explores those changes in detail using a sample available from MalwareBazaar.&lt;/p&gt;&#xA;&lt;h3 id=&#34;sample-details&#34;&gt;Sample Details&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Source&lt;/strong&gt;: &lt;a href=&#34;https://bazaar.abuse.ch/sample/796b5d63c93d71012e8a8e8a7bd9e1290ca3963b7f6c78c3cdd0023cfebe9eab/&#34; target=&#34;_blank&#34;&gt;MalwareBazaar link&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Observation Date&lt;/strong&gt;: 2026-03-28&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Claimed Malware Type&lt;/strong&gt;: Redline stealer&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;observations&#34;&gt;Observations&lt;/h3&gt;&#xA;&lt;p&gt;Earlier versions of Redline relied on a consistent config decryption method:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>My First Post</title>
       <link>http://localhost:1313/analysis-reports-blog/posts/my-first-post/</link>
       <pubDate>Sat, 14 Mar 2026 02:27:53 +0530</pubDate>
       <guid>http://localhost:1313/analysis-reports-blog/posts/my-first-post/</guid>
       <description>&lt;p&gt;First blog post test&#xA;Python Test code&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;greet&lt;/span&gt;(name: str) &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; str:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;Returns a greeting string.&amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;f&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;{&lt;/span&gt;name&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;!&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;print(greet(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hugo&amp;#34;&lt;/span&gt;))&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-yara&#34; data-lang=&#34;yara&#34;&gt;rule DetectMalware {&#xA;    meta:&#xA;        author = &amp;#34;researcher&amp;#34;&#xA;        description = &amp;#34;Detects suspicious PE files&amp;#34;&#xA;    strings:&#xA;        $magic = { 4D 5A }&#xA;        $str1 = &amp;#34;CreateRemoteThread&amp;#34; nocase&#xA;    condition:&#xA;        $magic at 0 and $str1&#xA;}&#xA;&lt;/code&gt;&lt;/pre&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>http://localhost:1313/analysis-reports-blog/posts/new_redline/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/analysis-reports-blog/posts/new_redline/</guid>
-      <description>&lt;p&gt;date = &amp;lsquo;2026-03-28T21:57:44+05:30&amp;rsquo;&#xA;draft = false&#xA;title = &amp;lsquo;New variant of Redline stealer?&amp;rsquo;&lt;/p&gt;&#xA;&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;The Redline stealer has been a prevalent malware used to harvest sensitive information from infected systems. Known for its predictable decryption tactics, recent updates indicate a shift in its approach to config decryption. This post explores those changes in detail using a sample available from MalwareBazaar.&lt;/p&gt;&#xA;&lt;h3 id=&#34;sample-details&#34;&gt;Sample Details&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Source&lt;/strong&gt;: &lt;a href=&#34;https://bazaar.abuse.ch/sample/796b5d63c93d71012e8a8e8a7bd9e1290ca3963b7f6c78c3cdd0023cfebe9eab/&#34;&gt;MalwareBazaar link&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Observation Date&lt;/strong&gt;: 2026-03-28&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Claimed Malware Type&lt;/strong&gt;: Redline stealer&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;observations&#34;&gt;Observations&lt;/h3&gt;&#xA;&lt;p&gt;Earlier versions of Redline relied on a consistent config decryption method:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
