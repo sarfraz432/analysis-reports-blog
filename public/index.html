@@ -114,20 +114,20 @@
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
           <a href="/analysis-reports-blog/posts/new_redline/" class="color-inherit dim link">
-            New variant of Redline stealer?
+            Analyzing the New Variant of Redline Stealer
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          <p>Earlier versions of Redline used to have consistent config decryption that is base64decode —&ndash;&gt; xor –-&gt; base64decode.
-<img src="/analysis-reports-blog/images/redline_1.png" alt="redline_1"></p>
-<p>Today I got this sample on malwarebazaar
-<a href="https://bazaar.abuse.ch/sample/796b5d63c93d71012e8a8e8a7bd9e1290ca3963b7f6c78c3cdd0023cfebe9eab/">https://bazaar.abuse.ch/sample/796b5d63c93d71012e8a8e8a7bd9e1290ca3963b7f6c78c3cdd0023cfebe9eab/</a>
-Which is said to be a Redline stealer. This time config decryption is different.
-Configuration is decrypted using simple XOR.</p>
-<p><img src="/analysis-reports-blog/images/redline_2.png" alt="redline_2"></p>
-<p>Here is the decryption routine of the new sample.</p>
-<p><img src="/analysis-reports-blog/images/redline_3.png" alt="redline_3"></p>
-<p>Also build Id is in plain text which earlier used to be encrypted using the same algorithm as C2.</p>
+          <h3 id="introduction">Introduction</h3>
+<p>The Redline stealer has been a prevalent malware used to harvest sensitive information from infected systems. Known for its predictable decryption tactics, recent updates indicate a shift in its approach to config decryption. This post explores those changes in detail using a sample available from MalwareBazaar.</p>
+<h3 id="sample-details">Sample Details</h3>
+<ul>
+<li><strong>Source</strong>: <a href="https://bazaar.abuse.ch/sample/796b5d63c93d71012e8a8e8a7bd9e1290ca3963b7f6c78c3cdd0023cfebe9eab/">MalwareBazaar link</a></li>
+<li><strong>Observation Date</strong>: 2026-03-28</li>
+<li><strong>Claimed Malware Type</strong>: Redline stealer</li>
+</ul>
+<h3 id="observations">Observations</h3>
+<p>Earlier versions of Redline relied on a consistent config decryption method:</p>
         </div>
         <a href="/analysis-reports-blog/posts/new_redline/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
       </div>

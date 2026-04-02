@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>New variant of Redline stealer? | Malware analysis reports by Sarfraz</title>
+    <title>Analyzing the New Variant of Redline Stealer | Malware analysis reports by Sarfraz</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Earlier versions of Redline used to have consistent config decryption that is base64decode —&ndash;&gt; xor –-&gt; base64decode.
+    <meta name="description" content="Introduction
+The Redline stealer has been a prevalent malware used to harvest sensitive information from infected systems. Known for its predictable decryption tactics, recent updates indicate a shift in its approach to config decryption. This post explores those changes in detail using a sample available from MalwareBazaar.
+Sample Details
 
-Today I got this sample on malwarebazaar
-https://bazaar.abuse.ch/sample/796b5d63c93d71012e8a8e8a7bd9e1290ca3963b7f6c78c3cdd0023cfebe9eab/
-Which is said to be a Redline stealer. This time config decryption is different.
-Configuration is decrypted using simple XOR.
+Source: MalwareBazaar link
+Observation Date: 2026-03-28
+Claimed Malware Type: Redline stealer
 
-Here is the decryption routine of the new sample.
-
-Also build Id is in plain text which earlier used to be encrypted using the same algorithm as C2.">
+Observations
+Earlier versions of Redline relied on a consistent config decryption method:">
     <meta name="generator" content="Hugo 0.158.0">
     
     
@@ -48,28 +48,25 @@ Also build Id is in plain text which earlier used to be encrypted using the same
     
     <meta property="og:url" content="http://localhost:1313/analysis-reports-blog/posts/new_redline/">
   <meta property="og:site_name" content="Malware analysis reports by Sarfraz">
-  <meta property="og:title" content="New variant of Redline stealer?">
-  <meta property="og:description" content="Earlier versions of Redline used to have consistent config decryption that is base64decode —–&gt; xor –-&gt; base64decode. Today I got this sample on malwarebazaar https://bazaar.abuse.ch/sample/796b5d63c93d71012e8a8e8a7bd9e1290ca3963b7f6c78c3cdd0023cfebe9eab/ Which is said to be a Redline stealer. This time config decryption is different. Configuration is decrypted using simple XOR.
-Here is the decryption routine of the new sample.
-Also build Id is in plain text which earlier used to be encrypted using the same algorithm as C2.">
+  <meta property="og:title" content="Analyzing the New Variant of Redline Stealer">
+  <meta property="og:description" content="Introduction The Redline stealer has been a prevalent malware used to harvest sensitive information from infected systems. Known for its predictable decryption tactics, recent updates indicate a shift in its approach to config decryption. This post explores those changes in detail using a sample available from MalwareBazaar.
+Sample Details Source: MalwareBazaar link Observation Date: 2026-03-28 Claimed Malware Type: Redline stealer Observations Earlier versions of Redline relied on a consistent config decryption method:">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2026-03-28T21:57:44+05:30">
     <meta property="article:modified_time" content="2026-03-28T21:57:44+05:30">
 
-  <meta itemprop="name" content="New variant of Redline stealer?">
-  <meta itemprop="description" content="Earlier versions of Redline used to have consistent config decryption that is base64decode —–&gt; xor –-&gt; base64decode. Today I got this sample on malwarebazaar https://bazaar.abuse.ch/sample/796b5d63c93d71012e8a8e8a7bd9e1290ca3963b7f6c78c3cdd0023cfebe9eab/ Which is said to be a Redline stealer. This time config decryption is different. Configuration is decrypted using simple XOR.
-Here is the decryption routine of the new sample.
-Also build Id is in plain text which earlier used to be encrypted using the same algorithm as C2.">
+  <meta itemprop="name" content="Analyzing the New Variant of Redline Stealer">
+  <meta itemprop="description" content="Introduction The Redline stealer has been a prevalent malware used to harvest sensitive information from infected systems. Known for its predictable decryption tactics, recent updates indicate a shift in its approach to config decryption. This post explores those changes in detail using a sample available from MalwareBazaar.
+Sample Details Source: MalwareBazaar link Observation Date: 2026-03-28 Claimed Malware Type: Redline stealer Observations Earlier versions of Redline relied on a consistent config decryption method:">
   <meta itemprop="datePublished" content="2026-03-28T21:57:44+05:30">
   <meta itemprop="dateModified" content="2026-03-28T21:57:44+05:30">
-  <meta itemprop="wordCount" content="73">
+  <meta itemprop="wordCount" content="230">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="New variant of Redline stealer?">
-  <meta name="twitter:description" content="Earlier versions of Redline used to have consistent config decryption that is base64decode —–&gt; xor –-&gt; base64decode. Today I got this sample on malwarebazaar https://bazaar.abuse.ch/sample/796b5d63c93d71012e8a8e8a7bd9e1290ca3963b7f6c78c3cdd0023cfebe9eab/ Which is said to be a Redline stealer. This time config decryption is different. Configuration is decrypted using simple XOR.
-Here is the decryption routine of the new sample.
-Also build Id is in plain text which earlier used to be encrypted using the same algorithm as C2.">
+  <meta name="twitter:title" content="Analyzing the New Variant of Redline Stealer">
+  <meta name="twitter:description" content="Introduction The Redline stealer has been a prevalent malware used to harvest sensitive information from infected systems. Known for its predictable decryption tactics, recent updates indicate a shift in its approach to config decryption. This post explores those changes in detail using a sample available from MalwareBazaar.
+Sample Details Source: MalwareBazaar link Observation Date: 2026-03-28 Claimed Malware Type: Redline stealer Observations Earlier versions of Redline relied on a consistent config decryption method:">
 
 	
   </head><body class="ma0 avenir bg-near-white development is-page is-page page-new_redline">
@@ -111,7 +108,7 @@ Also build Id is in plain text which earlier used to be encrypted using the same
           
         Posts
       </aside><div id="sharing" class="mt3 ananke-socials"></div>
-<h1 class="f1 athelas mt3 mb1">New variant of Redline stealer?</h1>
+<h1 class="f1 athelas mt3 mb1">Analyzing the New Variant of Redline Stealer</h1>
       
       
       
@@ -121,16 +118,37 @@ Also build Id is in plain text which earlier used to be encrypted using the same
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><p>Earlier versions of Redline used to have consistent config decryption that is base64decode —&ndash;&gt; xor –-&gt; base64decode.
-<img src="/analysis-reports-blog/images/redline_1.png" alt="redline_1"></p>
-<p>Today I got this sample on malwarebazaar
-<a href="https://bazaar.abuse.ch/sample/796b5d63c93d71012e8a8e8a7bd9e1290ca3963b7f6c78c3cdd0023cfebe9eab/">https://bazaar.abuse.ch/sample/796b5d63c93d71012e8a8e8a7bd9e1290ca3963b7f6c78c3cdd0023cfebe9eab/</a>
-Which is said to be a Redline stealer. This time config decryption is different.
-Configuration is decrypted using simple XOR.</p>
-<p><img src="/analysis-reports-blog/images/redline_2.png" alt="redline_2"></p>
-<p>Here is the decryption routine of the new sample.</p>
-<p><img src="/analysis-reports-blog/images/redline_3.png" alt="redline_3"></p>
-<p>Also build Id is in plain text which earlier used to be encrypted using the same algorithm as C2.</p>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><h3 id="introduction">Introduction</h3>
+<p>The Redline stealer has been a prevalent malware used to harvest sensitive information from infected systems. Known for its predictable decryption tactics, recent updates indicate a shift in its approach to config decryption. This post explores those changes in detail using a sample available from MalwareBazaar.</p>
+<h3 id="sample-details">Sample Details</h3>
+<ul>
+<li><strong>Source</strong>: <a href="https://bazaar.abuse.ch/sample/796b5d63c93d71012e8a8e8a7bd9e1290ca3963b7f6c78c3cdd0023cfebe9eab/">MalwareBazaar link</a></li>
+<li><strong>Observation Date</strong>: 2026-03-28</li>
+<li><strong>Claimed Malware Type</strong>: Redline stealer</li>
+</ul>
+<h3 id="observations">Observations</h3>
+<p>Earlier versions of Redline relied on a consistent config decryption method:</p>
+<ol>
+<li>Base64 decode</li>
+<li>XOR</li>
+<li>Base64 decode</li>
+</ol>
+<p><img src="/analysis-reports-blog/images/redline_1.png" alt="Previous Decryption Routine"></p>
+<p>In contrast, the new sample exhibits a much simpler decryption routine.</p>
+<h3 id="technical-details">Technical Details</h3>
+<h4 id="configuration-decryption">Configuration Decryption</h4>
+<p>The observed decryption in this new sample relies solely on XOR, a significant departure from the earlier routine. Below is the observed decryption logic in action:</p>
+<p><img src="/analysis-reports-blog/images/redline_2.png" alt="New Decryption Routine"></p>
+<h4 id="build-id-visibility">Build ID Visibility</h4>
+<p>Another notable change in this sample is the handling of the build ID. Previously, the build ID was encrypted using the same algorithm as the Command and Control (C2) configuration. In this variant, the build ID is stored as plain text, demonstrating a simplification in certain aspects of malware design.</p>
+<p><img src="/analysis-reports-blog/images/redline_3.png" alt="Decryption Routine Code"></p>
+<h3 id="conclusion">Conclusion</h3>
+<p>This evolution in the Redline stealer&rsquo;s code may indicate:</p>
+<ol>
+<li>An attempt to evade basic detection methods by altering signatures.</li>
+<li>A potential downside – the oversimplification could make future analysis easier for malware researchers.</li>
+</ol>
+<p>Understanding these changes is crucial for adapting detection and response strategies. As always, sharing insights and staying vigilant ensures a proactive approach against cyber threats.</p>
 <ul class="pa0">
   
 </ul>

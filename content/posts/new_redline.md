@@ -1,9 +1,8 @@
----
++++
 date = '2026-03-28T21:57:44+05:30'
 draft = false
 title = 'Analyzing the New Variant of Redline Stealer'
-
----
++++
 
 ### Introduction
 The Redline stealer has been a prevalent malware used to harvest sensitive information from infected systems. Known for its predictable decryption tactics, recent updates indicate a shift in its approach to config decryption. This post explores those changes in detail using a sample available from MalwareBazaar.
